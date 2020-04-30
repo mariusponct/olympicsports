@@ -11,7 +11,7 @@ $conn2 = new mysqli("192.168.0.106","marius","");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-echo "Connected successfully" . "<br>";
+echo "Connected successfullyyyy" . "<br>";
 
 $sql = "SELECT name,password FROM users";
 $result = $conn->query($sql);
