@@ -12,13 +12,13 @@ $result = $conn->query($sql);
 
 $conn->close();
 
-if ($result->num_rows > 0) {
+if ($result->num_rows > 0 ) {
 	echo '<input type="text" id="sportsInput" onkeyup="searchSports()" placeholder="Search sports..">';
 	echo '<table id="sportsTable">';
     // output data of each row
     while($row = $result->fetch_assoc()) {
         echo '<tr>'.
-    			 '<td>'. $row["name"]. '</td>'.
+    			 '<td> <a href="sports.php?name='. str_replace(' ', '_', $row["name"]). '">'. $row["name"]. '</a> </td>'.
 			 '</tr>';
 	}
 	echo '</table>';
