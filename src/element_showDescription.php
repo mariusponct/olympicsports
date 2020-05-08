@@ -11,7 +11,7 @@ $sql = "SELECT description FROM sports WHERE name='". str_replace('_', ' ', $_GE
 $result = $conn->query($sql);
 $row = $result->fetch_row();
 if ($result->num_rows == 1 ){
-	echo '<p>'. $row[0]. '</p>';	
+	echo '<p class="sports_description"> '. $row[0]. '</p>';	
 }else{
 	echo 'This sport has no description.';
 }
