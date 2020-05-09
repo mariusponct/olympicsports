@@ -1,3 +1,3 @@
 <?php
-echo '<p class="sports_title">'. strtoupper(str_replace('_', ' ', $_GET['name'])). '</p>';
+echo '<p class="h1 text-center">'. strtoupper(str_replace('_', ' ', $_GET['name'])). '</p>';
 

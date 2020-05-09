@@ -8,6 +8,7 @@ background-color: #3aafa9;
 background-image: url("../images/pattern.jpg");
 */ 
 
+/*
 body {
   background-image:linear-gradient(to right, rgba(43,122,120,0.8), rgba(43,122,120,0.8)), url("../images/pattern.jpg");
 
@@ -54,67 +55,29 @@ a:link, a:visited, a:active {
 a:hover {
   color: #2b7a78;
 }
-/*img {
+
+img {
   max-width: 100%;
   height: auto;
   width: auto;
+
+
+.banner{
+  background-image: url("../images/banner.png");
 }
 */
-
-@media all and (max-width: 960px) {
-/* CSS rules here for screens lower than 750px */
-.sports_image{
-  max-width:100%;
-  height: auto;
-  width: auto;
-}
-.sports_description{
-  max-width:100%;
-  height: auto;
-  width: auto;
-  color: red;
-}
-.sports_title{
-  max-width:100%;
-  height: auto;
-  width: auto;
-  color: red;
-}
-.carousel.slide{
-  max-width:100%;
-  height: auto;
-  width: auto;
-}
-}
-@media all and (min-width: 960px) {
-/* CSS rules here for screens above 750px */
-.sports_image{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-.sports_description{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  color: red;
-}
-.sports_title{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  color: red;
-}
-.carousel.slide{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+body {
+  overflow-x: hidden;
+  background-image: linear-gradient(to right, #2b7a78, #3aafa9, #2b7a78);
 }
 
+a:link, a:visited, a:active {
+  color: #17252a !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
 
-</style>
+a:hover {
+  color: #2b7a78 !important;
+  text-decoration: none !important;
+}

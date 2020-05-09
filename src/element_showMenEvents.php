@@ -11,9 +11,7 @@ $sql = "SELECT events_men FROM sports WHERE name='". str_replace('_', ' ', $_GET
 $result = $conn->query($sql);
 $row = $result->fetch_row();
 if ($result->num_rows == 1 ){
-	echo '<p class="sports_description"> '. $row[0]. '</p>';	
-}else{
-	echo 'This sport has no men events';
+	echo '<p>'. str_replace(', ', "<br>", $row[0]). '</p>';	
 }
 
 $conn->close();
