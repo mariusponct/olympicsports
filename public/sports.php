@@ -5,4 +5,5 @@ require '../src/element_showTitle.php';
 require '../src/element_showDescription.php';
 require '../src/element_showImage.php';
 require '../src/element_showEvents.php';
+require '../src/element_footer.php';
 ?>

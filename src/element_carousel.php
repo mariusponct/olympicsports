@@ -14,7 +14,7 @@ $conn->close();
 
 echo <<<EOL
 <div class="row justify-content-center">
-  <div class="col-md-6">
+  <div class="col-md-8">
     <div id="demo" class="carousel slide" data-ride="carousel">
       <ul class="carousel-indicators">
         <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -22,7 +22,7 @@ echo <<<EOL
         <li data-target="#demo" data-slide-to="2"></li>
       </ul>
       <!-- Wrapper for slides -->
-      <div class="carousel-inner" style="box-shadow: 0px 0px 75px 50px #17252a">
+      <div class="carousel-inner" style="box-shadow: 0px 0px 75px 50px #17252a; border-radius: 10px">
 EOL;
 
 $first_image_flag = true;
@@ -33,8 +33,8 @@ while ($row = $result->fetch_assoc()) {
     $first_image_flag = false;
   } else {
     echo '<div class="carousel-item">';
-  }
-  echo '<img src="images/'. str_replace(' ', '_', $row["name"]). '_large.jpg" alt="'. $row["name"]. ' image" class="img-fluid">'.  
+  }     
+  echo '<a href="sports.php?name='. str_replace(' ', '_', $row["name"]). '"> <img src="images/'. str_replace(' ', '_', $row["name"]). '_large.jpg" alt="'. $row["name"]. ' image" class="img-fluid"> </a>'. 
          '</div>';
 }
   
@@ -51,5 +51,5 @@ echo <<<EOL
   </div>
 </div>
 EOL;
-
+?>
 

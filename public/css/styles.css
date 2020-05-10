@@ -8,67 +8,15 @@ background-color: #3aafa9;
 background-image: url("../images/pattern.jpg");
 */ 
 
-/*
-body {
-  background-image:linear-gradient(to right, rgba(43,122,120,0.8), rgba(43,122,120,0.8)), url("../images/pattern.jpg");
-
-}
-
-table {
-  margin-left: auto;
-  margin-right: auto;
-  text-align:left;
-  font-size: 150%;
-}
-
-td:hover {
-  background-size: 100% 100%;
-  transform:scale(1.2,1.2);
-  transform-origin:center;
-  }
-
-input {
-  font-size: 150%;
-  background-color: #feffff;
-  color: #2b7a78;
-  border: 1px solid #17252a;
-  border-radius: 5px;
-  transition: width 0.1s ease-in-out;
-}
-
 input:focus {
   transform:scale(1.05,1.05);
   transform-origin:center;
   color: #17252a;
 }
 
-.search_bar {
-  text-align:center;
-}
-
-a:link, a:visited, a:active {
-  color: #def2f1;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #2b7a78;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  width: auto;
-
-
-.banner{
-  background-image: url("../images/banner.png");
-}
-*/
 body {
   overflow-x: hidden;
-  background-image: linear-gradient(to right, #2b7a78, #3aafa9, #2b7a78);
+  background-image: linear-gradient(to right,#2b7a78, #3aafa9, #2b7a78);
 }
 
 a:link, a:visited, a:active {
@@ -80,4 +28,5 @@ a:link, a:visited, a:active {
 a:hover {
   color: #2b7a78 !important;
   text-decoration: none !important;
+  font-size: 125%;
 }
