@@ -1,2 +1,2 @@
 <?php
-echo '<p class="h2 text-center">Events</p>';
+echo '<p class="mt-4 h2 text-center">Events</p>';
